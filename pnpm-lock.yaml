@@ -1,17 +1,13 @@
 lockfileVersion: '6.0'
 
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
-
 dependencies:
   nnfileabstraction:
     specifier: github:roobscoob/nnfileabstraction
-    version: github.com/roobscoob/nnfileabstraction/22595459bfb82f2e30742c40ca10f134417cede5
+    version: github.com/roobscoob/nnfileabstraction/c5125b64ebc7b421c937c0dd35e7dabea956bc58
 
 devDependencies:
   '@types/node':
-    specifier: ^20.9.0
+    specifier: ^20.9.2
     version: 20.9.2
   typescript:
     specifier: ^5.2.2
@@ -46,11 +42,15 @@ packages:
     resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
     dev: true
 
-  github.com/roobscoob/nnfileabstraction/22595459bfb82f2e30742c40ca10f134417cede5:
-    resolution: {tarball: https://codeload.github.com/roobscoob/nnfileabstraction/tar.gz/22595459bfb82f2e30742c40ca10f134417cede5}
+  github.com/roobscoob/nnfileabstraction/c5125b64ebc7b421c937c0dd35e7dabea956bc58:
+    resolution: {tarball: https://codeload.github.com/roobscoob/nnfileabstraction/tar.gz/c5125b64ebc7b421c937c0dd35e7dabea956bc58}
     name: nnfileabstraction
     version: 1.0.0
     requiresBuild: true
     dependencies:
       iconv-lite: 0.6.3
     dev: false
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false

@@ -11,7 +11,9 @@ import { InvalidMagicError } from "../formats/archives/sarc/errors";
 
 export class MagicU32 {
   static read<RE>(offset: number, span: ReadableSpan<RE>, endianness: Endianness) {
-    return endianness == Endianness.BigEndian ? span.getUInt32BE(offset).map(e => new MagicU32(e)) : span.getUInt32LE(offset).map(e => new MagicU32(e));
+    const v = endianness == Endianness.BigEndian ? span.getUInt32BE(offset) : span.getUInt32LE(offset);
+
+    return v.map(v => ({ value: new MagicU32(v), bytesRead: 4 }));
   }
 
   static write<WE>(offset: number, value: MagicU32, span: WritableSpan<any, any, WE>, endianness: Endianness) {
